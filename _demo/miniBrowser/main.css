@@ -1,0 +1,11 @@
+.large {
+  width: 120px;
+  height: 50px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #48c774;
+}

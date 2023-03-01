@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5b1878a8-938d-491c-8461-57c02d994f88}</ProjectGuid>
+    <RootNamespace>htmlUI</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../thirdParty/skia</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../thirdParty/skia</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;JS_STRICT_NAN_BOXING;CONFIG_BIGNUM;CONFIG_JSX;CONFIG_STORAGE;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../thirdParty/skia;..\thirdParty\quickjs\storage\dybase\include</AdditionalIncludeDirectories>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;JS_STRICT_NAN_BOXING;CONFIG_BIGNUM;CONFIG_JSX;CONFIG_STORAGE;NDEBUG;_CRT_SECURE_NO_WARNINGS;YY_NO_UNISTD_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>../thirdParty/skia;..\thirdParty\quickjs\storage\dybase\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>Default</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\UtilsSys.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\css\css_lex.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\css\css_syntax.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\css\parser.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\css\parser_pp.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\ci_string.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\debug.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\Extensions.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\Node.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\ParserDom.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\ParserSax.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\profile.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\tld.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\tree.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\Uri.h" />
+    <ClInclude Include="..\thirdParty\htmlcxx\html\utils.h" />
+    <ClInclude Include="..\thirdParty\quickjs\cutils.h" />
+    <ClInclude Include="..\thirdParty\quickjs\libbf.h" />
+    <ClInclude Include="..\thirdParty\quickjs\libregexp-opcode.h" />
+    <ClInclude Include="..\thirdParty\quickjs\libregexp.h" />
+    <ClInclude Include="..\thirdParty\quickjs\libunicode-table.h" />
+    <ClInclude Include="..\thirdParty\quickjs\libunicode.h" />
+    <ClInclude Include="..\thirdParty\quickjs\list.h" />
+    <ClInclude Include="..\thirdParty\quickjs\quickjs-atom.h" />
+    <ClInclude Include="..\thirdParty\quickjs\quickjs-libc.h" />
+    <ClInclude Include="..\thirdParty\quickjs\quickjs-opcode.h" />
+    <ClInclude Include="..\thirdParty\quickjs\quickjs.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\include\dybase.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\btree.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\buffer.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\database.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\file.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\hashtab.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\pagepool.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\stdtp.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\dybase\src\sync.h" />
+    <ClInclude Include="..\thirdParty\quickjs\storage\quickjs-storage.h" />
+    <ClInclude Include="..\thirdParty\quickjs\unicode_gen_def.h" />
+    <ClInclude Include="control.h" />
+    <ClInclude Include="CSSParser.h" />
+    <ClInclude Include="DlgWindows.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="JsProcess.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SkiaDraw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\UtilsSys.cpp" />
+    <ClCompile Include="..\thirdParty\htmlcxx\css\css_lex.c" />
+    <ClCompile Include="..\thirdParty\htmlcxx\css\css_syntax.c" />
+    <ClCompile Include="..\thirdParty\htmlcxx\css\parser.c" />
+    <ClCompile Include="..\thirdParty\htmlcxx\css\parser_pp.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\Extensions.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\Node.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\ParserDom.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\ParserSax.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\tests.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\Uri.cc" />
+    <ClCompile Include="..\thirdParty\htmlcxx\html\utils.cc" />
+    <ClCompile Include="..\thirdParty\quickjs\cutils.c" />
+    <ClCompile Include="..\thirdParty\quickjs\libbf.c" />
+    <ClCompile Include="..\thirdParty\quickjs\libregexp.c" />
+    <ClCompile Include="..\thirdParty\quickjs\libunicode.c" />
+    <ClCompile Include="..\thirdParty\quickjs\quickjs-libc.c" />
+    <ClCompile Include="..\thirdParty\quickjs\quickjs.c" />
+    <ClCompile Include="..\thirdParty\quickjs\storage\dybase\src\btree.cpp" />
+    <ClCompile Include="..\thirdParty\quickjs\storage\dybase\src\database.cpp" />
+    <ClCompile Include="..\thirdParty\quickjs\storage\dybase\src\dybase.cpp" />
+    <ClCompile Include="..\thirdParty\quickjs\storage\dybase\src\file.cpp" />
+    <ClCompile Include="..\thirdParty\quickjs\storage\dybase\src\pagepool.cpp" />
+    <ClCompile Include="..\thirdParty\quickjs\storage\quickjs-storage.c" />
+    <ClCompile Include="..\thirdParty\quickjs\unicode_gen.c" />
+    <ClCompile Include="CSSParser.cpp" />
+    <ClCompile Include="DlgWindows.cpp" />
+    <ClCompile Include="JsProcess.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SkiaDraw.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="htmlUI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="htmlUI.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\thirdParty\htmlcxx\css\default.css" />
+    <None Include="..\thirdParty\htmlcxx\html\gen_tld.pl" />
+    <None Include="..\thirdParty\htmlcxx\html\tld.list" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
