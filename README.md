@@ -1,2 +1,5 @@
-# htmlUI
-htmlUI
+_demo文件夹有现成的exe，可以直接打开看效果
+
+只有release x64能编译通过，因为找到的skia.lib只有这个能编过，就懒得自己去编译了
+
+

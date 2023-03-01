@@ -6,7 +6,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
     DlgWindows dlgWindows(hInstance);
-    dlgWindows.setURI("E:\\htmlUI\\_demo\\miniBrowser\\index.html");
+    //dlgWindows.setURI("E:\\htmlUI\\_demo\\miniBrowser\\index.html");
+    dlgWindows.setURI("..\\_demo\\miniBrowser\\index.html");
     dlgWindows.RunMessageLoop();
     return 0;
 }
