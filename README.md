@@ -161,5 +161,6 @@ Q群956223415
 
 
 # 致谢
-特别感谢weolar，他是miniblink、kdgui的作者
+特别感谢weolar，他是miniblink、kdgui的作者  
 特别感谢quickjs、htmlcxx的作者
+
